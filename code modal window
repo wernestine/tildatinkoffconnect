@@ -1,0 +1,17 @@
+// Installing a button on a page via HTML code
+
+<button
+  type="button"
+  class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+  onclick="tinkoff.createDemo(  // Remove "Demo" to remove the demo mode
+    {
+      sum: 100500, // Total amount of installments
+      items: [{name: 'iphone 11', price: 100000, quantity: 1}, {name: 'Чехол', price: 500, quantity: 1}], // Name of goods, quantity and cost (The amount of goods must not exceed the total cost of "sum")
+      demoFlow: 'sms', //The method of obtaining status
+      promoCode: 'default', // Adjusting the installment period
+      shopId: 'SHOP_ID', // Shop id can be found in the personal cabinet
+      showcaseId: 'SHOWCASE_ID', // Showcase id can be found in the personal cabinet
+    },
+    {view: 'modal'}
+  )"
+></button>
