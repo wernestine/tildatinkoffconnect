@@ -1,0 +1,18 @@
+// Installing a button on a page via HTML code
+
+<button
+  type="button"
+  class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+  onclick="tinkoff.create(
+    {
+      sum: 10000, // Total amount of installments
+      items: [{name: 'Apple TV', price: 10000, quantity: 1}], // Name of goods, quantity and cost (The amount of goods must not exceed the total cost of "sum")
+      promoCode: 'default', // Adjusting the installment period
+      shopId: 'SHOP_ID', // Shop id can be found in the personal cabinet
+      showcaseId: 'SHOWCASE_ID', // Showcase id can be found in the personal cabinet
+    },
+    {view: 'newTab'} // Display in a new tab
+  )"
+></button>
+
+// Warning. Don't forget to install the library to run the script
